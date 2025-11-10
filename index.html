@@ -1,18 +1,38 @@
-<div style="text-align:center; background:#0b0b0b; padding:20px; color:white; border-radius:20px;">
-  <h2>Bigg Boss Season 17 — Episode Player</h2>
-  <video id="bbplayer" width="90%" height="400" controls style="border-radius:12px;">
-    <source src="https://strtape.tech/e/v9WkPPzwpBTJPy/Bigg_Boss_%5BHindi%5D_480P_S17_E44.mp4" type="video/mp4">
-  </video>
-  <p>📺 Continue watching support enabled — your progress will be saved automatically!</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bigg Boss Episode 44</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    video {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border: 2px solid #555;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
 
-<script>
-const video = document.getElementById("bbplayer");
-video.addEventListener("timeupdate", () => {
-  localStorage.setItem("bb_s17_progress", video.currentTime);
-});
-video.addEventListener("loadedmetadata", () => {
-  const t = localStorage.getItem("bb_s17_progress");
-  if (t) video.currentTime = t;
-});
-</script>
+  <h1>Bigg Boss S17 - Episode 44</h1>
+
+  <video controls>
+    <source src="https://strtape.tech/e/v9WkPPzwpBTJPy/Bigg_Boss_%5BHindi%5D_480P_S17_E44.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+</body>
+</html>
+
