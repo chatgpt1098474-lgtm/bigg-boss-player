@@ -1,0 +1,18 @@
+<div style="text-align:center; background:#0b0b0b; padding:20px; color:white; border-radius:20px;">
+  <h2>Bigg Boss Season 17 — Episode Player</h2>
+  <video id="bbplayer" width="90%" height="400" controls style="border-radius:12px;">
+    <source src="https://strtape.tech/e/v9WkPPzwpBTJPy/Bigg_Boss_%5BHindi%5D_480P_S17_E44.mp4" type="video/mp4">
+  </video>
+  <p>📺 Continue watching support enabled — your progress will be saved automatically!</p>
+</div>
+
+<script>
+const video = document.getElementById("bbplayer");
+video.addEventListener("timeupdate", () => {
+  localStorage.setItem("bb_s17_progress", video.currentTime);
+});
+video.addEventListener("loadedmetadata", () => {
+  const t = localStorage.getItem("bb_s17_progress");
+  if (t) video.currentTime = t;
+});
+</script>
